@@ -58,7 +58,7 @@ body{
 
 /* HEADER */
 header{
-    background-color: #046E8F;    
+    background-color: #B4B8C5;    
     padding-top: 30px;    
 }
 header .container{
@@ -69,7 +69,8 @@ header .linha{
     align-items: center;
 }
 
-header .coluna{    
+header .coluna{ 
+     
 
 }
 
@@ -91,7 +92,7 @@ header .coluna img{
 }
 
 header .coluna h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 header .coluna p{
@@ -99,22 +100,30 @@ header .coluna p{
     color: #636363;
 }
 
+header .coluna .uni{
+    font-size: 1.1rem;
+    color: #636363;
+    margin: 5px 0 12px;
+}
+
 header .coluna ul{
+    margin: 16px 0 0;
 
 }
 
 header .coluna ul li{   
+    margin: 0 0 12px;
 
 }
 
 header .coluna ul li a{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: black;
 }
 
 /* FOOTER */
 footer{
-    background-color: #0C4767;
+    background-color: #1B3B6F;
 }
 footer .container{}
 footer nav{}
@@ -164,13 +173,34 @@ main .coluna-direita{}
 main .coluna section{}
 main .coluna section h2{
     font-size: 1.4rem;
+    margin: 18px 0px 12px;
 }
 
-main .coluna section p{}
-main .coluna section ul{}
-main .coluna section ul li{}
-main .coluna section ul li h3{}
-main .coluna section ul li strong{}
+main .coluna section p{
+    font-size: 0.9rem;
+    color: #636363;
+    
+}
+main .coluna section ul{
+    margin: 10px 0px 0;
+    
+     
+}
+main .coluna section ul img{
+    max-width: 23px;
+    position: absolute;    
+}
+
+main .coluna section ul li{
+    margin: 8px 30px 10px;  
+}
+main .coluna section ul li h3{
+    font-size: 1.1rem;
+}
+main .coluna section ul li strong{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
 main .coluna section ul li p{}
 
 
