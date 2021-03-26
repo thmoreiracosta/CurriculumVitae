@@ -125,28 +125,46 @@ header .coluna ul li a{
 footer{
     background-color: #1B3B6F;
 }
-footer .container{}
+footer .container{
+    
+}
 footer nav{}
+footer nav p{
+    color:white;
+    font-size: 1.0rem;
+}
+
+footer nav .copyright{
+    color:white;
+    font-size: 0.65rem;
+    margin: 20px 0px;
+}
+
 footer nav ul{}
 footer nav ul li{}
 footer nav ul li a{
     color:white;
 }
 
-footer nav .info-contato{}
-footer nav .info-contato li{
+footer nav .info-contato{
     
 }
+footer nav .info-contato li{}
 
-footer nav .info-contato li a{}
+footer nav .info-contato li a{
+    font-size: 0.75rem;
+}
+
 footer nav .redes-sociais{    
     display:flex;
     justify-content: center;
+    
 }
 
 footer nav .redes-sociais li{
-    margin: 0 13px;
+    margin: 40px 13px;
     text-align: center;
+    
 }
 
 footer nav .redes-sociais li a{
@@ -156,9 +174,12 @@ footer nav .redes-sociais li a{
 footer nav .redes-sociais li a img{
     width: 25px;
     
+    
 }
 
-footer nav .redes-sociais li a img p{}
+footer nav .redes-sociais li a img p{
+    
+}
 
 
 
@@ -170,7 +191,11 @@ main .linha{}
 main .coluna{}
 main .coluna-esquerda{}
 main .coluna-direita{}
-main .coluna section{}
+main .coluna section{
+    border: 2px solid #d4e9ff;
+    margin: 0 0 20px;
+    padding:20px;
+}
 main .coluna section h2{
     font-size: 1.4rem;
     margin: 18px 0px 12px;
