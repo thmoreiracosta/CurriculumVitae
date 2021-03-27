@@ -25,11 +25,12 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul,li,
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;    
-    font-size: 16px;
+    text-decoration: none;     
 }
 
-
+:root {
+    --cor-fundo-primária
+}
 
 .container{    
     width: 100%;
@@ -38,22 +39,13 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul,li,
     padding: 30px;
 }
 
-.hidden{
-    display: none;
-}
-
-.linha{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
 .coluna{
     flex-basis: 49%;
 }
 
-
+.hidden{
+    display: none;
+}
 
 /* TEMA DARK */
 label {
@@ -80,10 +72,10 @@ label span {
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 10px;
-    margin-top: 10px;
-    margin-left:970px;
+    display:flex;  
+    padding: 8px 10px;  
+    margin-top: 20px;
+    margin-left: 212px;    
     font-size: 14px;
     cursor: pointer;
     text-align: center;
@@ -157,7 +149,6 @@ label span {
     color:white;
 }
 
-
 .activate-dark:checked ~ .dark-mode  .container {
     background-color:black ;
 }
@@ -174,7 +165,6 @@ label span {
     color:white;
 }
 
-
 .activate-dark:checked ~ .dark-mode main .coluna section p{
     color:white;
 }
@@ -188,9 +178,6 @@ label span {
 }
 
 
-
-
-
 /* BODY */
 body{
     font-family: 'Merriweather Sans', sans-serif;
@@ -199,7 +186,7 @@ body{
 /* HEADER */
 header{
     background-color: #B4B8C5;    
-    padding-top: 30px;    
+    padding: 30px 20px 0;    
 }
 header .container{
     background-color: white;
@@ -207,11 +194,6 @@ header .container{
 
 header .linha{
     align-items: center;
-}
-
-header .coluna{ 
-     
-
 }
 
 header .coluna-esquerda{
@@ -222,53 +204,47 @@ header .coluna-direita{
     flex-basis: 70%;
 }
 
-header .coluna figure{
-
-}
-
 header .coluna img{
     max-width: 250px;
-    border-radius: 100%;
+    margin: 13px 26px;   
 }
 
 header .coluna h1{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    margin: 0 33px
 }
 
 header .coluna p{
-    font-size: 1.2rem;
+    font-size: 0.95rem;
+    margin: 0 39px;
     color: #636363;
 }
 
 header .coluna .uni{
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: #636363;
-    margin: 5px 0 12px;
+    margin: 5px 33px 0;
 }
 
 header .coluna ul{
-    margin: 16px 0 0;
-
+    margin: 15px -8px -15px -15px;
 }
 
 header .coluna ul li{   
     margin: 0 0 12px;
-
 }
 
 header .coluna ul li a{
-    font-size: 1.0rem;
+    font-size: 0.85rem;
     color: black;
 }
 
 /* FOOTER */
 footer{
     background-color: #1B3B6F;
+    margin-top: 5px;
 }
-footer .container{
-    
-}
-footer nav{}
+
 footer nav p{
     color:white;
     font-size: 1.0rem;
@@ -280,93 +256,65 @@ footer nav .copyright{
     margin: 20px 0px;
 }
 
-footer nav ul{}
-footer nav ul li{}
 footer nav ul li a{
     color:white;
 }
-
-footer nav .info-contato{
-    
-}
-footer nav .info-contato li{}
 
 footer nav .info-contato li a{
     font-size: 0.75rem;
 }
 
 footer nav .redes-sociais{    
-    display:flex;
-    justify-content: center;
-    
+        
+    border-top: 1px solid rgb(255 255 255 / 20%);
 }
 
 footer nav .redes-sociais li{
     margin: 40px 13px;
-    text-align: center;
-    
-}
-
-footer nav .redes-sociais li a{
-    
+    text-align: center;    
 }
 
 footer nav .redes-sociais li a img{
-    width: 25px;
-    
-    
+    width: 25px;    
 }
-
-footer nav .redes-sociais li a img p{
-    
-}
-
-
-
 
 /* PÁGINA INICIAL */
-main {}
-main .container{}
-main .linha{}
-main .coluna{}
-main .coluna-esquerda{}
-main .coluna-direita{}
-
-
 main .coluna section{
     border: 2px solid #d4e9ff;
     margin: 0 0 20px;
     padding:20px;
+    min-height:150px;
 }
+
 main .coluna section h2{
     font-size: 1.4rem;
     margin: 0px 0px 15px;
 }
 
-
 main .coluna section p{
     font-size: 0.9rem;
-    color: #636363;    
+    color: #636363;
+    line-height: 1.5;    
 }
 
 main .coluna section ul{
     margin: 10px 0px 0;     
 }
 
-main .coluna section div{
-    
+main .coluna section div{    
     width: 12px;
     height: 12px;     
     border-color: #1B3B6F;
     border-style: solid;
-    display:inline-flex;     
+    display:table-cell;     
 }
 
 #caixa1{
     margin-right: -60px;
+    margin-left: 65px;
     border-radius: 100%;
     border-width: 6px;
-    margin-left: 65px;  
+      
 }
 
 #caixa2{
@@ -438,27 +386,84 @@ main .coluna section ul img{
 }
 
 main .coluna section ul li{
-    margin: 8px 30px 10px;  
-    
+    margin: 8px 30px 10px;     
 }
+
 main .coluna section ul li h3{
     font-size: 1.1rem;
 }
+
 main .coluna section ul li strong{
     font-size: 0.9rem;
     font-weight: 500;
+    margin: 5px 0 10px;
+    display: inline-block;
 }
+
 main .coluna section ul li p{}
 
 
 /* EXTRAS */
 
 
-/* @MEDIAS */
- .info-contato{
+/* @MEDIAS - DESKTOP */
+@media only screen and (min-width: 769px){
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }    
 
-}
+    footer nav .redes-sociais{ 
+        display:flex;
+        justify-content: center;           
+    }
 
- .redes-sociais{
+    main .coluna section div{ 
+        display: inline-flex;
+    }
+
+    header{           
+        padding-top: 30px;    
+    }
+
+    header .coluna img{
+        max-width: 250px;
+        border-radius: 100%;
+    }
+
+    header .coluna h1{
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    header .coluna p{
+        font-size: 1.2rem; 
+        margin: 0;       
+    }
+
+    header .coluna .uni{
+        font-size: 1.1rem;        
+        margin: 5px 0 12px;
+    }
+
+    header .coluna ul{
+        margin: 16px 0 0;
+    }
+
+    header .coluna ul li a{
+        font-size: 1.0rem;        
+    }
+
+    header .coluna ul{
+        margin: 20px 0 0;
+    }
+
+    .button {
+        display:inherit;               
+        margin-top: 720px;
+        margin-left: -97px;        
+    }
 
 }
