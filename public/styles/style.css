@@ -29,6 +29,8 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul,li,
     font-size: 16px;
 }
 
+
+
 .container{    
     width: 100%;
     max-width: 1125px;
@@ -50,6 +52,144 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul,li,
 .coluna{
     flex-basis: 49%;
 }
+
+
+
+/* TEMA DARK */
+label {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 52px;
+    height: 30px;
+    background-color: #1150ad;
+    border-radius: 20px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+label span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 100%;
+    transition: all ease .3s;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left:970px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #154397;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px rgb(219, 219, 219);
+  }
+
+  .button:hover {background-color: #3269ceb4}
+  
+  .button:active {
+    background-color: #154397;
+    box-shadow: 0 3.5px rgb(85, 83, 83);
+    transform: translateY(4px);
+  }
+
+  .activate-dark {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.activate-dark:checked ~ .dark-mode .button{
+    background-color: white;
+    color: black;
+}
+  
+
+.activate-dark:checked ~ .dark-mode label{
+    background-color: #999999;
+}
+.activate-dark:checked ~ .dark-mode label span{
+    background-color: white;
+    /* margin-left: 21px; */
+    transform: translateX(21px);
+    transition: all ease .3s;
+}
+
+.activate-dark:checked ~ .dark-mode {
+    background-color:black;
+    background-color: black;
+    background-color:white;
+    background-color:white;
+}
+
+.activate-dark:checked ~ .dark-mode header {
+    background-color:black;
+}
+
+.activate-dark:checked ~ .dark-mode header .container {
+    background-color:black ;
+}
+
+.activate-dark:checked ~ .dark-mode header h1{
+    color:white;
+}
+
+.activate-dark:checked ~ .dark-mode header p{
+    color:white;
+}
+
+.activate-dark:checked ~ .dark-mode header .uni{
+    color:white;
+}
+
+.activate-dark:checked ~ .dark-mode header .coluna ul li a {
+    color:white;
+}
+
+
+.activate-dark:checked ~ .dark-mode  .container {
+    background-color:black ;
+}
+
+.activate-dark:checked ~ .dark-mode main {
+    background-color:black;
+}
+
+.activate-dark:checked ~ .dark-mode footer {
+    background-color:black;
+} 
+  
+.activate-dark:checked ~ .dark-mode main .coluna section h2{
+    color:white;
+}
+
+
+.activate-dark:checked ~ .dark-mode main .coluna section p{
+    color:white;
+}
+
+.activate-dark:checked ~ .dark-mode main .coluna section ul li{
+    color:white;
+}
+
+.activate-dark:checked ~ .dark-mode main .coluna section div{
+    border-color: white;
+}
+
+
+
+
 
 /* BODY */
 body{
@@ -191,6 +331,8 @@ main .linha{}
 main .coluna{}
 main .coluna-esquerda{}
 main .coluna-direita{}
+
+
 main .coluna section{
     border: 2px solid #d4e9ff;
     margin: 0 0 20px;
@@ -198,19 +340,98 @@ main .coluna section{
 }
 main .coluna section h2{
     font-size: 1.4rem;
-    margin: 18px 0px 12px;
+    margin: 0px 0px 15px;
 }
+
 
 main .coluna section p{
     font-size: 0.9rem;
-    color: #636363;
-    
+    color: #636363;    
 }
+
 main .coluna section ul{
-    margin: 10px 0px 0;
-    
-     
+    margin: 10px 0px 0;     
 }
+
+main .coluna section div{
+    
+    width: 12px;
+    height: 12px;     
+    border-color: #1B3B6F;
+    border-style: solid;
+    display:inline-flex;     
+}
+
+#caixa1{
+    margin-right: -60px;
+    border-radius: 100%;
+    border-width: 6px;
+    margin-left: 65px;  
+}
+
+#caixa2{
+    margin-right: -77.6px;
+    border-radius: 100%;
+    border-width: 6px;
+    margin-left: 82.4px;
+}
+
+#caixa3{
+    margin-right: -63.75px;
+    border-radius: 100%;
+    border-width: 6px;
+    margin-left: 68.5px;
+}
+
+#caixa4{
+    margin-right: -66.25px;
+    border-radius: 100%;
+    border-width: 6px;
+    margin-left: 71px;
+}
+
+#caixa5{
+    margin-right: -39px;
+    border-radius: 100%;
+    border-width: 6px;
+    margin-left: 44px;
+}
+
+#caixa6{
+    
+    border-radius: 100%;
+    border-width: 3.5px;
+    margin-left: 84px;
+}
+
+#caixa6_{
+    
+    border-radius: 100%;
+    border-width: 3.5px;
+    margin-left: 66px;
+}
+
+#caixa6p{
+    margin-right: -66px;    
+    border-radius: 100%;
+    border-width: 3.5px;
+    margin-left: 70px;
+}
+
+#caixa6c{
+    margin-right: -69px;    
+    border-radius: 100%;
+    border-width: 3.5px;
+    margin-left: 73px;
+}
+
+#caixa6s{
+    margin-right: -41.5px;
+    border-radius: 100%;
+    border-width: 3.5px;
+    margin-left:45px;
+}
+
 main .coluna section ul img{
     max-width: 23px;
     position: absolute;    
@@ -218,6 +439,7 @@ main .coluna section ul img{
 
 main .coluna section ul li{
     margin: 8px 30px 10px;  
+    
 }
 main .coluna section ul li h3{
     font-size: 1.1rem;
